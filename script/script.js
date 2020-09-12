@@ -21,6 +21,29 @@ $(".starButton").one('click', function() {
     // checkGoal();
 })
 
+let lvlCounter = 1;
+$(".levelOneButton").on('click', function() {
+
+    $(".levelTwo").show();
+    lvlCounter++;
+    $('span.lvlCounter').text(lvlCounter);
+    $("body,html").animate({
+        scrollTop: $("#levelTwo").offset().top
+    }, 800);
+    // $(".levelOne").hide();
+})
+
+$(".levelTwoButton").on('click', function() {
+    $(".levelThree").show();
+    lvlCounter++;
+    $('span.lvlCounter').text(lvlCounter);
+    $("body,html").animate({
+        scrollTop: $("#levelThree").offset().top
+    }, 800);
+})
+
+
+
 
 
 
@@ -34,4 +57,7 @@ $(".starButton").one('click', function() {
 // Document Ready
 $(document).ready(function() {
     // starApp.init();
+    // $(".levelTwo").hide();
+    // $(".levelThree").hide();
+    // $(".credits").hide();
 });

@@ -168,6 +168,18 @@ button {
             max-width: 200px;
         }
     }
+    .levelTwoButton {
+        background-color: $palePink;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: $titleFont;
+        color: $deepBrown;
+        font-size: 4rem;
+        box-shadow: 5px 5px $primaryStar;
+        position: absolute;
+        bottom: 5%;
+        right: 40%;
+    }
     .lvlTwoStarOne,
     .lvlTwoStarTwo,
     .lvlTwoStarThree {
@@ -182,7 +194,7 @@ button {
         right: 70%;
     }
     .lvlTwoStarThree {
-        bottom: 10%;
+        bottom: 20%;
         right: 50%;
     }
 }

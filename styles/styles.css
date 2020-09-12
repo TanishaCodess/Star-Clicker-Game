@@ -468,6 +468,20 @@ button {
   max-width: 200px;
 }
 
+.levelTwo .levelTwoButton {
+  background-color: #FB5B68;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Luckiest Guy", cursive;
+  color: #1f0c07;
+  font-size: 4rem;
+  -webkit-box-shadow: 5px 5px #FFFBA2;
+          box-shadow: 5px 5px #FFFBA2;
+  position: absolute;
+  bottom: 5%;
+  right: 40%;
+}
+
 .levelTwo .lvlTwoStarOne,
 .levelTwo .lvlTwoStarTwo,
 .levelTwo .lvlTwoStarThree {
@@ -485,7 +499,7 @@ button {
 }
 
 .levelTwo .lvlTwoStarThree {
-  bottom: 10%;
+  bottom: 20%;
   right: 50%;
 }
 
