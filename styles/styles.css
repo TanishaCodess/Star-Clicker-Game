@@ -314,6 +314,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .levelOne .lvlTitleContainer h2 {
@@ -352,6 +353,17 @@ img {
   margin-bottom: 20px;
 }
 
+.levelOne .levelOneButton {
+  background-color: #FB5B68;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Luckiest Guy", cursive;
+  color: #1f0c07;
+  font-size: 4rem;
+  -webkit-box-shadow: 5px 5px #FFFBA2;
+          box-shadow: 5px 5px #FFFBA2;
+}
+
 .bottomBar {
   width: 100%;
   position: fixed;
@@ -365,6 +377,7 @@ img {
   font-size: 3rem;
   color: #978AC4;
   text-shadow: -2px -2px 0 #FFDD50;
+  z-index: 2;
 }
 
 .bottomBar .hCounter {
@@ -430,16 +443,137 @@ button {
 .levelTwo {
   background-image: url(../Assets/backgrounds/forestlevel.png);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.levelTwo .levelTwoSteven {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
 }
 
 .levelTwo .levelTwoSteven .stevenTwoTxtContainer {
   background-color: #DD504B;
   max-width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .levelTwo .levelTwoSteven .stevenTwoImgContainer {
   max-width: 200px;
+}
+
+.levelTwo .lvlTwoStarOne,
+.levelTwo .lvlTwoStarTwo,
+.levelTwo .lvlTwoStarThree {
+  position: absolute;
+}
+
+.levelTwo .lvlTwoStarOne {
+  top: 5%;
+  right: 5%;
+}
+
+.levelTwo .lvlTwoStarTwo {
+  top: 30%;
+  right: 70%;
+}
+
+.levelTwo .lvlTwoStarThree {
+  bottom: 10%;
+  right: 50%;
+}
+
+.levelThree {
+  background-image: url(../Assets/backgrounds/gemChamber.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.levelThree .levelThreeSteven {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  bottom: 5%;
+  right: 2%;
+}
+
+.levelThree .levelThreeSteven .stevenThreeTxtContainer {
+  background-color: #DD504B;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.levelThree .levelThreeSteven .stevenThreeImgContainer {
+  max-width: 200px;
+}
+
+.levelThree .lvlThreeStarOne,
+.levelThree .lvlThreeStarTwo,
+.levelThree .lvlThreeStarThree {
+  position: absolute;
+}
+
+.levelThree .lvlThreeStarOne {
+  top: 50%;
+  right: 65%;
+}
+
+.levelThree .lvlThreeStarTwo {
+  top: 10%;
+  left: 5%;
+}
+
+.levelThree .lvlThreeStarThree {
+  top: 20%;
+  right: 60%;
+}
+
+.credits {
+  background-image: url(../Assets/backgrounds/finalCredits.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.credits .creditsSteven {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.credits .creditsSteven .stevenCreditsTxtContainer {
+  background-color: #DD504B;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.credits .creditsSteven .stevenCreditsImgContainer {
+  max-width: 150px;
+}
+
+footer {
+  display: none;
 }

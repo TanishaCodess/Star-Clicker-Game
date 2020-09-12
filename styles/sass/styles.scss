@@ -34,6 +34,7 @@ cursive;
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 2;
         h2 {
             font-size: 4rem;
             color: $lightPurple;
@@ -61,6 +62,15 @@ cursive;
             margin-bottom: 20px;
         }
     }
+    .levelOneButton {
+        background-color: $palePink;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: $titleFont;
+        color: $deepBrown;
+        font-size: 4rem;
+        box-shadow: 5px 5px $primaryStar;
+    }
 }
 
 .bottomBar {
@@ -72,6 +82,7 @@ cursive;
     font-size: 3rem;
     color: $lightPurple;
     text-shadow: -2px -2px 0 $secondaryStar;
+    z-index: 2;
     .hCounter {
         margin-left: 20px;
     }
@@ -137,16 +148,112 @@ button {
 .levelTwo {
     background-image: url(../Assets/backgrounds/forestlevel.png);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
+    z-index: 0;
     .levelTwoSteven {
+        position: absolute;
+        bottom: 5%;
+        left: 2%;
         .stevenTwoTxtContainer {
             background-color: $levelTwoTxt;
             max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
         .stevenTwoImgContainer {
             max-width: 200px;
+        }
+    }
+    .lvlTwoStarOne,
+    .lvlTwoStarTwo,
+    .lvlTwoStarThree {
+        position: absolute;
+    }
+    .lvlTwoStarOne {
+        top: 5%;
+        right: 5%;
+    }
+    .lvlTwoStarTwo {
+        top: 30%;
+        right: 70%;
+    }
+    .lvlTwoStarThree {
+        bottom: 10%;
+        right: 50%;
+    }
+}
+
+//end of level 2
+//start of level 3
+.levelThree {
+    background-image: url(../Assets/backgrounds/gemChamber.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    .levelThreeSteven {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        bottom: 5%;
+        right: 2%;
+        .stevenThreeTxtContainer {
+            background-color: $levelTwoTxt;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .stevenThreeImgContainer {
+            max-width: 200px;
+        }
+    }
+    .lvlThreeStarOne,
+    .lvlThreeStarTwo,
+    .lvlThreeStarThree {
+        position: absolute;
+    }
+    .lvlThreeStarOne {
+        top: 50%;
+        right: 65%;
+    }
+    .lvlThreeStarTwo {
+        top: 10%;
+        left: 5%;
+    }
+    .lvlThreeStarThree {
+        top: 20%;
+        right: 60%;
+    }
+}
+
+//credits page
+.credits {
+    background-image: url(../Assets/backgrounds/finalCredits.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    .creditsSteven {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        .stevenCreditsTxtContainer {
+            background-color: $levelTwoTxt;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .stevenCreditsImgContainer {
+            max-width: 150px;
         }
     }
 }
@@ -154,3 +261,6 @@ button {
 // font-family: 'Fredoka One', cursive;
 // font-family: 'Long Cang', cursive;
 // font-family: 'Luckiest Guy', cursive;
+footer {
+    display: none;
+}
