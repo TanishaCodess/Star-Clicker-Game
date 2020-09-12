@@ -283,6 +283,12 @@ img {
   width: 100%;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .levelOne {
   background-image: url(../Assets/backgrounds/beachSide.jpg);
   background-size: cover;
@@ -302,6 +308,19 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.levelOne .lvlTitleContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.levelOne .lvlTitleContainer h2 {
+  font-size: 4rem;
+  color: #978AC4;
+  text-shadow: -2px -2px 0 #FFDD50;
+  margin-left: 20px;
 }
 
 .levelOne header {
@@ -406,4 +425,21 @@ button {
 .lvlOneStarThree {
   top: 50%;
   right: 20%;
+}
+
+.levelTwo {
+  background-image: url(../Assets/backgrounds/forestlevel.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.levelTwo .levelTwoSteven .stevenTwoTxtContainer {
+  background-color: #DD504B;
+  max-width: 500px;
+}
+
+.levelTwo .levelTwoSteven .stevenTwoImgContainer {
+  max-width: 200px;
 }

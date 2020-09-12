@@ -4,6 +4,7 @@ $lightPurple: #978AC4;
 $palePink: #FB5B68;
 $primaryStar: #FFFBA2;
 $secondaryStar: #FFDD50;
+$levelTwoTxt: #DD504B;
 // Font Variables 
 $mainFont: 'Fredoka One',
 cursive;
@@ -13,6 +14,12 @@ $detailFont: 'Long Cang',
 cursive;
 //Imports
 @import "partials/setup";
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
 .levelOne {
     background-image: url(../Assets/backgrounds/beachSide.jpg);
     background-size: cover;
@@ -23,6 +30,17 @@ cursive;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    .lvlTitleContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        h2 {
+            font-size: 4rem;
+            color: $lightPurple;
+            text-shadow: -2px -2px 0 $secondaryStar;
+            margin-left: 20px;
+        }
+    }
     header {
         display: flex;
         flex-direction: column;
@@ -112,6 +130,25 @@ button {
 .lvlOneStarThree {
     top: 50%;
     right: 20%;
+}
+
+// level One End
+//Level Two Start
+.levelTwo {
+    background-image: url(../Assets/backgrounds/forestlevel.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .levelTwoSteven {
+        .stevenTwoTxtContainer {
+            background-color: $levelTwoTxt;
+            max-width: 500px;
+        }
+        .stevenTwoImgContainer {
+            max-width: 200px;
+        }
+    }
 }
 
 // font-family: 'Fredoka One', cursive;
