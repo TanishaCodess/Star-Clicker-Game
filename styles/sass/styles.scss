@@ -93,10 +93,6 @@ button {
     border: none;
 }
 
-.starSectionOne {
-    position: relative;
-}
-
 .lvlOneStarOne,
 .lvlOneStarTwo,
 .lvlOneStarThree {
@@ -111,6 +107,11 @@ button {
 .lvlOneStarTwo {
     top: 20%;
     right: 10%;
+}
+
+.lvlOneStarThree {
+    top: 50%;
+    right: 20%;
 }
 
 // font-family: 'Fredoka One', cursive;
