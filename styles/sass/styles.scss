@@ -5,6 +5,7 @@ $palePink: #FB5B68;
 $primaryStar: #FFFBA2;
 $secondaryStar: #FFDD50;
 $levelTwoTxt: #DD504B;
+$lightWhite: #fbfbfb;
 // Font Variables 
 $mainFont: 'Fredoka One',
 cursive;
@@ -226,6 +227,18 @@ button {
             max-width: 200px;
         }
     }
+    .levelThreeButton {
+        background-color: $palePink;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: $titleFont;
+        color: $deepBrown;
+        font-size: 4rem;
+        box-shadow: 5px 5px $primaryStar;
+        position: absolute;
+        bottom: 5%;
+        right: 40%;
+    }
     .lvlThreeStarOne,
     .lvlThreeStarTwo,
     .lvlThreeStarThree {
@@ -253,6 +266,25 @@ button {
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+    .creditsText {
+        padding-top: 200px;
+    }
+    .creditsText p {
+        margin-bottom: 10px;
+    }
+    .creditsText,
+    .creditsText p,
+    .creditsText a {
+        color: $lightWhite;
+        text-align: center;
+        // padding-top: 200px;
+        // margin-top: 50%;
+    }
+    h3 {
+        font-family: $mainFont;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
     .creditsSteven {
         position: absolute;
         top: 50%;
@@ -273,6 +305,3 @@ button {
 // font-family: 'Fredoka One', cursive;
 // font-family: 'Long Cang', cursive;
 // font-family: 'Luckiest Guy', cursive;
-footer {
-    display: none;
-}
