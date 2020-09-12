@@ -13,39 +13,50 @@
 <body>
     <main>
 
-        <div class="talkingSection">
-            <div class="stevenText">
-                <p class="stevenSpeak">Hey <span class="nameContainer"></span>, I'm Steven Universe! I lost three of my stars when I was floating around in the sky. Can you please help me find them? </p>
+        <section class="levelOne">
+            <header>
+                <div class="titleImgContainer"><img src="./Assets/backgrounds/SUTitle.png" alt="the Steven Universe title logo"></div>
+                <div class="titleTxtContainer">
+                    <h1><span class="sr-only">Steven Universe</span> needs your help!</h1>
+                </div>
+            </header>
+            <div class="levelOneSteven">
+                <div class="stevenOneTxtContainer">
+                    <p>Hi! <span class="userName">---</span>! Thank goodness youre here!</p>
+                    <p>I lost all my stars again...this time I went to a bunch of places before I realised they were gone. Click or select all of the stars in each level and find them all!</p>
+                </div>
+                <div class="stevenOneImgContainer">
+                    <img src="Assets/icons/talkingSteven.png" alt="Steven Universe talking">
+                </div>
             </div>
-            <img src="Assets/bubble.png" class="chatBubble" aria-hidden="true">
+            <div class="starSectionOne">
+                <div class="lvlOneStarOne">
+                    <button><i class="fas fa-star" aria-hidden="true"></i></button>
+                    <span class="sr-only">One of Steven's stars</span>
+                </div>
+                <div class="lvlOneStarTwo">
+                    <button><i class="fas fa-star" aria-hidden="true"></i></button>
+                    <span class="sr-only">One of Steven's stars</span>
+                </div>
+                <div class="lvlOneStarThree">
+                    <button><i class="fas fa-star" aria-hidden="true"></i></button>
+                    <span class="sr-only">One of Steven's stars</span>
+                </div>
+            </div>
+            <div class="bottomBar">
+                <h2 class="hCounter">Stars Found: <span class="counter">0</span></h2>
+                <h2 class="hInventory">Inventory: <span class="inventory"></span></h2>
+            </div>
+        </section>
 
-        </div>
+        <section class="levelTwo">
 
-        <div class="fallingSteven">
-            <img src="Assets/talkingSteven.png" class="steven" alt="Steven Universe smiling and talking.">
-        </div>
+        </section>
 
-        <div class="counterSection">
-            <div class="counterPosition">
-                <h1>Stars found: <span class="counter">0</span></h1>
-                <span class="hint">Hint: Click on the star to collect it!</span>
-            </div>
-        </div>
+        <section class="levelThree">
 
-        <div class="starSection">
-            <div class="starOne">
-                <button><i class="fas fa-star" aria-hidden="true"></i></button>
-                <span class="sr-only">One of Steven's stars</span>
-            </div>
-            <div class="starTwo">
-                <button><i class="fas fa-star" aria-hidden="true"></i></button>
-                <span class="sr-only">One of Steven's stars</span>
-            </div>
-            <div class="starThree">
-                <button><i class="fas fa-star" aria-hidden="true"></i></button>
-                <span class="sr-only">One of Steven's stars</span>
-            </div>
-        </div>
+        </section>
+
 
 
     </main>

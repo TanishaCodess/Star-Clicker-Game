@@ -1,11 +1,118 @@
-// Variables
+// Color Variables
 $deepBrown: #1f0c07;
 $lightPurple: #978AC4;
 $palePink: #FB5B68;
 $primaryStar: #FFFBA2;
 $secondaryStar: #FFDD50;
+// Font Variables 
+$mainFont: 'Fredoka One',
+cursive;
+$titleFont: 'Luckiest Guy',
+cursive;
+$detailFont: 'Long Cang',
+cursive;
 //Imports
-@import "setup";
+@import "partials/setup";
+.levelOne {
+    background-image: url(../Assets/backgrounds/beachSide.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titleImgContainer {
+            width: 40%;
+        }
+    }
+    .levelOneSteven {
+        .stevenOneImgContainer {
+            max-width: 300px;
+        }
+        .stevenOneTxtContainer {
+            max-width: 500px;
+            background-color: $palePink;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.bottomBar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    color: $lightPurple;
+    text-shadow: -2px -2px 0 $secondaryStar;
+    .hCounter {
+        margin-left: 20px;
+    }
+    .hInventory {
+        margin-right: 20px;
+    }
+}
+
+h1 {
+    font-family: $mainFont;
+    color: $palePink;
+    text-shadow: -2px -2px 0 $secondaryStar;
+    font-size: 4rem;
+    margin-left: 150px;
+    margin-top: -40px;
+}
+
+h2 {
+    font-family: $titleFont;
+}
+
+p {
+    font-family: $mainFont;
+    color: $deepBrown;
+    font-size: 2rem;
+    margin: 0;
+}
+
+i {
+    color: #FFFBA2;
+    text-shadow: 5px 5px #FFDD50;
+    font-size: 6rem;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.starSectionOne {
+    position: relative;
+}
+
+.lvlOneStarOne,
+.lvlOneStarTwo,
+.lvlOneStarThree {
+    position: absolute;
+}
+
+.lvlOneStarOne {
+    top: 5%;
+    left: 5%;
+}
+
+.lvlOneStarTwo {
+    top: 20%;
+    right: 10%;
+}
+
 // font-family: 'Fredoka One', cursive;
 // font-family: 'Long Cang', cursive;
 // font-family: 'Luckiest Guy', cursive;

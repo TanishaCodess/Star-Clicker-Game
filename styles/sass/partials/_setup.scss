@@ -1,3 +1,4 @@
+//Setup Snippet
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -262,4 +263,20 @@ html {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+// end of set up
+// style stripping
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
