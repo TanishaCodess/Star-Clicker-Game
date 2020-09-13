@@ -72,6 +72,28 @@ cursive;
         font-size: 4rem;
         box-shadow: 5px 5px $primaryStar;
     }
+    .lvlOneStarOne,
+    .lvlOneStarTwo,
+    .lvlOneStarThree,
+    .lvlOneInventory {
+        position: absolute;
+    }
+    .lvlOneStarOne {
+        top: 5%;
+        left: 5%;
+    }
+    .lvlOneStarTwo {
+        top: 20%;
+        right: 10%;
+    }
+    .lvlOneStarThree {
+        top: 50%;
+        right: 20%;
+    }
+    .lvlOneInventory {
+        top: 50%;
+        left: 5%;
+    }
 }
 
 .bottomBar {
@@ -123,25 +145,17 @@ button {
     border: none;
 }
 
-.lvlOneStarOne,
-.lvlOneStarTwo,
-.lvlOneStarThree {
-    position: absolute;
-}
-
-.lvlOneStarOne {
-    top: 5%;
-    left: 5%;
-}
-
-.lvlOneStarTwo {
-    top: 20%;
-    right: 10%;
-}
-
-.lvlOneStarThree {
-    top: 50%;
-    right: 20%;
+.inventory {
+    display: flex;
+    .inventoryContainer {
+        // display: inline;
+        // width: 100px;
+        // height: 100px;
+        img {
+            // display: inline;
+            width: 100%;
+        }
+    }
 }
 
 // level One End
@@ -183,7 +197,8 @@ button {
     }
     .lvlTwoStarOne,
     .lvlTwoStarTwo,
-    .lvlTwoStarThree {
+    .lvlTwoStarThree,
+    .lvlTwoInventory {
         position: absolute;
     }
     .lvlTwoStarOne {
@@ -197,6 +212,10 @@ button {
     .lvlTwoStarThree {
         bottom: 20%;
         right: 50%;
+    }
+    .lvlTwoInventory {
+        top: 5%;
+        left: 5%;
     }
 }
 
@@ -241,7 +260,8 @@ button {
     }
     .lvlThreeStarOne,
     .lvlThreeStarTwo,
-    .lvlThreeStarThree {
+    .lvlThreeStarThree,
+    .lvlThreeInventory {
         position: absolute;
     }
     .lvlThreeStarOne {
@@ -255,6 +275,10 @@ button {
     .lvlThreeStarThree {
         top: 20%;
         right: 60%;
+    }
+    .lvlThreeInventory {
+        bottom: 40%;
+        right: 30%;
     }
 }
 

@@ -365,6 +365,33 @@ img {
           box-shadow: 5px 5px #FFFBA2;
 }
 
+.levelOne .lvlOneStarOne,
+.levelOne .lvlOneStarTwo,
+.levelOne .lvlOneStarThree,
+.levelOne .lvlOneInventory {
+  position: absolute;
+}
+
+.levelOne .lvlOneStarOne {
+  top: 5%;
+  left: 5%;
+}
+
+.levelOne .lvlOneStarTwo {
+  top: 20%;
+  right: 10%;
+}
+
+.levelOne .lvlOneStarThree {
+  top: 50%;
+  right: 20%;
+}
+
+.levelOne .lvlOneInventory {
+  top: 50%;
+  left: 5%;
+}
+
 .bottomBar {
   width: 100%;
   position: fixed;
@@ -420,25 +447,14 @@ button {
   border: none;
 }
 
-.lvlOneStarOne,
-.lvlOneStarTwo,
-.lvlOneStarThree {
-  position: absolute;
+.inventory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.lvlOneStarOne {
-  top: 5%;
-  left: 5%;
-}
-
-.lvlOneStarTwo {
-  top: 20%;
-  right: 10%;
-}
-
-.lvlOneStarThree {
-  top: 50%;
-  right: 20%;
+.inventory .inventoryContainer img {
+  width: 100%;
 }
 
 .levelTwo {
@@ -485,7 +501,8 @@ button {
 
 .levelTwo .lvlTwoStarOne,
 .levelTwo .lvlTwoStarTwo,
-.levelTwo .lvlTwoStarThree {
+.levelTwo .lvlTwoStarThree,
+.levelTwo .lvlTwoInventory {
   position: absolute;
 }
 
@@ -502,6 +519,11 @@ button {
 .levelTwo .lvlTwoStarThree {
   bottom: 20%;
   right: 50%;
+}
+
+.levelTwo .lvlTwoInventory {
+  top: 5%;
+  left: 5%;
 }
 
 .levelThree {
@@ -557,7 +579,8 @@ button {
 
 .levelThree .lvlThreeStarOne,
 .levelThree .lvlThreeStarTwo,
-.levelThree .lvlThreeStarThree {
+.levelThree .lvlThreeStarThree,
+.levelThree .lvlThreeInventory {
   position: absolute;
 }
 
@@ -574,6 +597,11 @@ button {
 .levelThree .lvlThreeStarThree {
   top: 20%;
   right: 60%;
+}
+
+.levelThree .lvlThreeInventory {
+  bottom: 40%;
+  right: 30%;
 }
 
 .credits {
