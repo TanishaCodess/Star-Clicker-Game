@@ -43,20 +43,29 @@ const lootBox = [];
 $(".cookieCatButton").one('click', function() {
     $(this).fadeOut();
     $(".inventoryContainerOne").append(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat" width="50" height="50">`);
-    lootBox.push(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat" width="50" height="50"></img>`);
+    lootBox.push(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat" width="100" height="100"></img>`);
 })
 
 $(".pearlPointButton").one('click', function() {
     $(this).fadeOut();
     $(".inventoryContainerTwo").append(`<img src="Assets/icons/pearlPoint.png" alt="Pearl point sticker" width="50" height="50">`);
-    lootBox.push(`<img src="Assets/icons/pearlPoint.png" alt="Pearl point sticker" width="50" height="50">`);
+    lootBox.push(`<img src="Assets/icons/pearlPoint.png" alt="Pearl point sticker" width="100" height="100">`);
 })
 
 $(".sheildButton").one('click', function() {
     $(this).fadeOut();
     $(".inventoryContainerThree").append(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield" width="50" height="50">`);
-    lootBox.push(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield" width="50" height="50">`);
+    lootBox.push(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield" width="100" height="100">`);
 })
+
+//Loot Box
+$(".lootBoxButton").one('click', function() {
+    $(this).fadeOut();
+    const randomLoot = lootBox[Math.floor(Math.random() * lootBox.length)];
+    $(".lootDisplay").append(randomLoot);
+})
+
+
 
 function getLoot() {
     lootBox[Math.floor(Math.random() * lootBox.length)];
@@ -91,8 +100,16 @@ $(".levelTwoButton").on('click', function() {
 })
 
 $(".levelThreeButton").on('click', function() {
-    $(".credits").show();
+    $(".lootScreen").show();
     $(".lvlTitle").hide();
+    $("body,html").animate({
+        scrollTop: $("#lootScreen").offset().top
+    }, 800);
+})
+
+$(".lootScreenButton").on('click', function() {
+    $(".credits").show();
+    $(".starCounter").hide();
     $("body,html").animate({
         scrollTop: $("#credits").offset().top
     }, 800);
@@ -108,15 +125,15 @@ $(".levelThreeButton").on('click', function() {
 
 
 
-
-
 // Document Ready
 $(document).ready(function() {
     // starApp.init();
-    $(".levelOneButton").hide();
-    $(".levelTwoButton").hide();
-    $(".levelThreeButton").hide();
-    $(".levelTwo").hide();
-    $(".levelThree").hide();
-    $(".credits").hide();
+    // $(".levelOneButton").hide();
+    // $(".levelTwoButton").hide();
+    // $(".levelThreeButton").hide();
+    // $(".lootScreenButton").hide();
+    // $(".levelTwo").hide();
+    // $(".levelThree").hide();
+    // $(".lootScreen").hide();
+    // $(".credits").hide();
 });

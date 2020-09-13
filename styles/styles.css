@@ -363,6 +363,7 @@ img {
   font-size: 4rem;
   -webkit-box-shadow: 5px 5px #FFFBA2;
           box-shadow: 5px 5px #FFFBA2;
+  margin-bottom: 20px;
 }
 
 .levelOne .lvlOneStarOne,
@@ -602,6 +603,57 @@ button {
 .levelThree .lvlThreeInventory {
   bottom: 40%;
   right: 30%;
+}
+
+.lootScreen {
+  background-image: url(../Assets/backgrounds/warpPad.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.lootScreen .lootSteven {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  bottom: 7%;
+  right: 2%;
+}
+
+.lootScreen .lootSteven .stevenLootTxtContainer {
+  background-color: #DD504B;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.lootScreen .lootSteven .stevenLootImgContainer {
+  max-width: 300px;
+}
+
+.lootScreen .lootSection {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+
+.lootScreen .lootSection .lootDisplay {
+  max-width: 300px;
+}
+
+.lootScreen .lootSection .lootImgContainer {
+  max-width: 300px;
 }
 
 .credits {

@@ -71,6 +71,7 @@ cursive;
         color: $deepBrown;
         font-size: 4rem;
         box-shadow: 5px 5px $primaryStar;
+        margin-bottom: 20px;
     }
     .lvlOneStarOne,
     .lvlOneStarTwo,
@@ -279,6 +280,45 @@ button {
     .lvlThreeInventory {
         bottom: 40%;
         right: 30%;
+    }
+}
+
+//Loot Screen
+.lootScreen {
+    background-image: url(../Assets/backgrounds/warpPad.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    .lootSteven {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        bottom: 7%;
+        right: 2%;
+        .stevenLootTxtContainer {
+            background-color: $levelTwoTxt;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .stevenLootImgContainer {
+            max-width: 300px;
+        }
+    }
+    .lootSection {
+        position: absolute;
+        bottom: 10%;
+        left: 40%;
+        .lootDisplay {
+            max-width: 300px;
+        }
+        .lootImgContainer {
+            max-width: 300px;
+        }
     }
 }
 
