@@ -11,16 +11,8 @@ $mainFont: 'Fredoka One',
 cursive;
 $titleFont: 'Luckiest Guy',
 cursive;
-$detailFont: 'Long Cang',
-cursive;
 //Imports
 @import "partials/setup";
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-}
-
 .levelOne {
     background-image: url(../Assets/backgrounds/beachSide.jpg);
     background-size: cover;
@@ -311,14 +303,32 @@ button {
     }
     .lootSection {
         position: absolute;
-        bottom: 10%;
+        bottom: 20%;
         left: 40%;
         .lootDisplay {
             max-width: 300px;
+            p {
+                background-color: $secondaryStar;
+                border-radius: 15px;
+                padding: 20px;
+                margin-top: 20px;
+            }
         }
         .lootImgContainer {
             max-width: 300px;
         }
+    }
+    .lootScreenButton {
+        background-color: $palePink;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: $titleFont;
+        color: $deepBrown;
+        font-size: 4rem;
+        box-shadow: 5px 5px $primaryStar;
+        position: absolute;
+        bottom: 5%;
+        right: 40%;
     }
 }
 
@@ -366,6 +376,7 @@ button {
     }
 }
 
-// font-family: 'Fredoka One', cursive;
-// font-family: 'Long Cang', cursive;
-// font-family: 'Luckiest Guy', cursive;
+// TO DO
+// Media Queries
+// Update text so that it tells you to click button for next level
+// clean up code and split into level partials

@@ -284,12 +284,6 @@ img {
   width: 100%;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 90%;
-}
-
 .levelOne {
   background-image: url(../Assets/backgrounds/beachSide.jpg);
   background-size: cover;
@@ -644,7 +638,7 @@ button {
 
 .lootScreen .lootSection {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 40%;
 }
 
@@ -652,8 +646,29 @@ button {
   max-width: 300px;
 }
 
+.lootScreen .lootSection .lootDisplay p {
+  background-color: #FFDD50;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 .lootScreen .lootSection .lootImgContainer {
   max-width: 300px;
+}
+
+.lootScreen .lootScreenButton {
+  background-color: #FB5B68;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Luckiest Guy", cursive;
+  color: #1f0c07;
+  font-size: 4rem;
+  -webkit-box-shadow: 5px 5px #FFFBA2;
+          box-shadow: 5px 5px #FFFBA2;
+  position: absolute;
+  bottom: 5%;
+  right: 40%;
 }
 
 .credits {
