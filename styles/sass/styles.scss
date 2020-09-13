@@ -84,8 +84,8 @@ cursive;
         right: 20%;
     }
     .lvlOneInventory {
-        top: 50%;
-        left: 5%;
+        top: 65%;
+        right: 5%;
     }
 }
 
@@ -376,7 +376,30 @@ button {
     }
 }
 
+//Media Queries
+@media (max-width: 750px) {
+    .levelOne {
+        .lvlTitleContainer {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        header {
+            h1 {
+                font-size: 2rem;
+                padding-top: 20px;
+            }
+        }
+        .bottomBar {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
 // TO DO
 // Media Queries
+// change how the bottom bar stacks
 // Update text so that it tells you to click button for next level
 // clean up code and split into level partials

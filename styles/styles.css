@@ -383,8 +383,8 @@ img {
 }
 
 .levelOne .lvlOneInventory {
-  top: 50%;
-  left: 5%;
+  top: 65%;
+  right: 5%;
 }
 
 .bottomBar {
@@ -717,4 +717,17 @@ button {
 
 .credits .creditsSteven .stevenCreditsImgContainer {
   max-width: 150px;
+}
+
+@media (max-width: 750px) {
+  .levelOne .lvlTitleContainer h2 {
+    font-size: 3rem;
+  }
+  .levelOne header h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  .levelOne .bottomBar h2 {
+    font-size: 3rem;
+  }
 }
