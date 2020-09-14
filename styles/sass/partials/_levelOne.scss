@@ -1,0 +1,101 @@
+//Level One (home page)
+.levelOne {
+    background-image: url(../Assets/backgrounds/beachSide.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    //Top Screen Overlay: Level Title in top left of screen
+    .lvlTitleContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        h2 {
+            font-size: 4rem;
+            color: $lightPurple;
+            text-shadow: -2px -2px 0 $secondaryStar;
+            margin-left: 20px;
+        }
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titleImgContainer {
+            width: 40%;
+        }
+    }
+    .levelOneSteven {
+        margin: 0 10px;
+        .stevenOneImgContainer {
+            max-width: 300px;
+        }
+        .stevenOneTxtContainer {
+            max-width: 500px;
+            background-color: $palePink;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .levelOneButton {
+        background-color: $palePink;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: $titleFont;
+        color: $deepBrown;
+        font-size: 4rem;
+        box-shadow: 5px 5px $primaryStar;
+        margin-bottom: 50px;
+    }
+    .lvlOneStarOne,
+    .lvlOneStarTwo,
+    .lvlOneStarThree,
+    .lvlOneInventory {
+        position: absolute;
+    }
+    .lvlOneStarOne {
+        top: 5%;
+        left: 5%;
+    }
+    .lvlOneStarTwo {
+        top: 16%;
+        right: 10%;
+    }
+    .lvlOneStarThree {
+        top: 50%;
+        right: 20%;
+    }
+    .lvlOneInventory {
+        top: 65%;
+        right: 5%;
+    }
+    // Bottom Part of Screen overlay
+    .bottomBar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 3rem;
+        color: $lightPurple;
+        text-shadow: -2px -2px 0 $secondaryStar;
+        z-index: 2;
+        .hCounter {
+            margin-left: 20px;
+        }
+        .inventory {
+            display: flex;
+            .hInventory {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+// level One End

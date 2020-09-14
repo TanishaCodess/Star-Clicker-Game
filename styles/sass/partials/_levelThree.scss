@@ -1,0 +1,64 @@
+//start of level 3
+.levelThree {
+    background-image: url(../Assets/backgrounds/gemChamber.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    .levelThreeSteven {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        bottom: 5%;
+        right: 2%;
+        .stevenThreeTxtContainer {
+            background-color: $levelTwoTxt;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .stevenThreeImgContainer {
+            max-width: 200px;
+        }
+    }
+    .levelThreeButton {
+        background-color: $palePink;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: $titleFont;
+        color: $deepBrown;
+        font-size: 4rem;
+        box-shadow: 5px 5px $primaryStar;
+        position: absolute;
+        bottom: 5%;
+        right: 50%;
+        margin-left: 10px;
+    }
+    .lvlThreeStarOne,
+    .lvlThreeStarTwo,
+    .lvlThreeStarThree,
+    .lvlThreeInventory {
+        position: absolute;
+    }
+    .lvlThreeStarOne {
+        top: 50%;
+        right: 65%;
+    }
+    .lvlThreeStarTwo {
+        top: 10%;
+        left: 5%;
+    }
+    .lvlThreeStarThree {
+        top: 20%;
+        right: 60%;
+    }
+    .lvlThreeInventory {
+        bottom: 40%;
+        right: 30%;
+    }
+}
+
+//end of level 3

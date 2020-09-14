@@ -1,0 +1,65 @@
+//Media Queries
+@media (max-width: 750px) {
+    .levelOne {
+        .lvlTitleContainer {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        header {
+            h1 {
+                font-size: 2rem;
+                padding-top: 20px;
+            }
+        }
+        .bottomBar {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .levelOne {
+        .levelOneButton {
+            margin-bottom: 85px;
+        }
+    }
+    .bottomBar {
+        flex-direction: column;
+        .inventory {
+            margin-left: 20px;
+        }
+    }
+    .levelTwo {
+        .levelTwoSteven {
+            bottom: 20%;
+        }
+        .levelTwoButton {
+            right: 5%;
+            bottom: 10%;
+        }
+    }
+    .levelThree {
+        .levelThreeSteven {
+            margin-left: 5%;
+        }
+        .levelThreeButton {
+            bottom: 15%;
+        }
+    }
+    .lootScreen {
+        .lootSection {
+            left: 5%;
+            bottom: 27%;
+            .lootImgContainer {
+                width: 200px;
+            }
+        }
+        .lootScreenButton {
+            right: 5%;
+            bottom: 15%;
+        }
+    }
+}

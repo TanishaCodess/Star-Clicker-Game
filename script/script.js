@@ -1,28 +1,33 @@
-const starApp = {};
-
-
 // prompt to ask for name when they visit the page
 // store than name in a variable
-//user that name in the text
-// let userName = prompt("Hi! Whats your name?");
+//use that name in the text
+let userName = prompt("Hi! Whats your name?");
 
-// const checkName = function() {
-//     if (userName === "") {
-//         let userName = "friend";
-//     } else {
-//         $('.userName').text(userName);
-//     }
-// }
-// checkName();
-
-
-
+const checkName = function() {
+    if (userName === "") {
+        let userName = "friend";
+    } else {
+        $('.userName').text(userName);
+    }
+}
+checkName();
 
 
 // create a counter for the stars
 let counter = 0;
 
-//check star counter 
+//stars event listener
+$(".starButton").one('click', function() {
+
+    // increase the counter value by 1
+    counter = counter + 1;
+    $('span.counter').text(counter);
+    //fade out when clicked
+    $(this).fadeOut();
+    //check goal to reveal next level
+    checkGoal();
+})
+
 // reveal buttons as stars are found
 const checkGoal = function() {
     if (counter === 3) {
@@ -36,20 +41,11 @@ const checkGoal = function() {
     }
 }
 
-//stars
-$(".starButton").one('click', function() {
-
-    // increase the counter value by 1
-    counter = counter + 1;
-    $('span.counter').text(counter);
-    //fade out when clicked
-    $(this).fadeOut();
-    checkGoal();
-})
-
-//Inventory Items
+//Adding Special Inventory Items
+// create array for loot items
 const lootBox = [];
 
+//add item to inventory on click and store a version I can use in the final lootbox
 $(".cookieCatButton").one('click', function() {
     $(this).fadeOut();
     $(".inventoryContainerOne").append(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat" width="50" height="50">`);
@@ -65,10 +61,11 @@ $(".pearlPointButton").one('click', function() {
 $(".sheildButton").one('click', function() {
     $(this).fadeOut();
     $(".inventoryContainerThree").append(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield" width="50" height="50">`);
-    lootBox.push(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield"> <p>Steven's powers manifested into a shield so that he could protect the ones he cares about. We should all be more like Steven.</p>`);
+    lootBox.push(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield"> <p>Steven's powers manifested into a shield so that he could protect the ones he cares about most. We should all be more like Steven.</p>`);
 })
 
 //Loot Box
+// use lootBox array and randomly append one to html
 $(".lootBoxButton").one('click', function() {
     $(this).fadeOut();
     $(".lootSteven").hide();
@@ -80,12 +77,10 @@ $(".lootBoxButton").one('click', function() {
 
 
 
-
-
-
 //level counter in top left of screen
 let lvlCounter = 1;
 
+//Buttons Section
 //on click, unhide next level and scroll to it
 $(".levelOneButton").on('click', function() {
 
@@ -125,18 +120,8 @@ $(".lootScreenButton").on('click', function() {
 })
 
 
-
-
-
-
-
-
-
-
-
 // Document Ready
 $(document).ready(function() {
-    // starApp.init();
     $(".levelOneButton").hide();
     $(".levelTwoButton").hide();
     $(".levelThreeButton").hide();

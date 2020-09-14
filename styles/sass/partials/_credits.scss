@@ -1,0 +1,46 @@
+//credits page
+.credits {
+    background-image: url(../Assets/backgrounds/finalCredits.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    .creditsText {
+        padding-top: 200px;
+    }
+    .creditsText p {
+        margin-bottom: 10px;
+    }
+    .creditsText,
+    .creditsText p,
+    .creditsText a {
+        color: $lightWhite;
+        text-align: center;
+        // padding-top: 200px;
+        // margin-top: 50%;
+    }
+    h3 {
+        font-family: $mainFont;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    .creditsSteven {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        margin-left: 5%;
+        .stevenCreditsTxtContainer {
+            background-color: $levelTwoTxt;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .stevenCreditsImgContainer {
+            max-width: 150px;
+        }
+    }
+}
+
+//end of Credits
