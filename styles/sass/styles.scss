@@ -13,6 +13,56 @@ $titleFont: 'Luckiest Guy',
 cursive;
 //Imports
 @import "partials/setup";
+// style stripping & defaults
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-family: $mainFont;
+    color: $palePink;
+    text-shadow: -2px -2px 0 $secondaryStar;
+    font-size: 4rem;
+    margin-left: 150px;
+    margin-top: -40px;
+}
+
+h2 {
+    font-family: $titleFont;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: $mainFont;
+    color: $deepBrown;
+    font-size: 2rem;
+    margin: 0;
+}
+
+i {
+    color: $primaryStar;
+    text-shadow: 5px 5px $secondaryStar;
+    font-size: 6rem;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+// End of Style Stripping
+//Level One (home page)
 .levelOne {
     background-image: url(../Assets/backgrounds/beachSide.jpg);
     background-size: cover;
@@ -23,6 +73,7 @@ cursive;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    //Top Screen Overlay: Level Title in top left of screen
     .lvlTitleContainer {
         position: fixed;
         top: 0;
@@ -44,6 +95,7 @@ cursive;
         }
     }
     .levelOneSteven {
+        margin: 0 10px;
         .stevenOneImgContainer {
             max-width: 300px;
         }
@@ -63,7 +115,7 @@ cursive;
         color: $deepBrown;
         font-size: 4rem;
         box-shadow: 5px 5px $primaryStar;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .lvlOneStarOne,
     .lvlOneStarTwo,
@@ -76,7 +128,7 @@ cursive;
         left: 5%;
     }
     .lvlOneStarTwo {
-        top: 20%;
+        top: 16%;
         right: 10%;
     }
     .lvlOneStarThree {
@@ -87,66 +139,25 @@ cursive;
         top: 65%;
         right: 5%;
     }
-}
-
-.bottomBar {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 3rem;
-    color: $lightPurple;
-    text-shadow: -2px -2px 0 $secondaryStar;
-    z-index: 2;
-    .hCounter {
-        margin-left: 20px;
-    }
-    .hInventory {
-        margin-right: 20px;
-    }
-}
-
-h1 {
-    font-family: $mainFont;
-    color: $palePink;
-    text-shadow: -2px -2px 0 $secondaryStar;
-    font-size: 4rem;
-    margin-left: 150px;
-    margin-top: -40px;
-}
-
-h2 {
-    font-family: $titleFont;
-}
-
-p {
-    font-family: $mainFont;
-    color: $deepBrown;
-    font-size: 2rem;
-    margin: 0;
-}
-
-i {
-    color: #FFFBA2;
-    text-shadow: 5px 5px #FFDD50;
-    font-size: 6rem;
-}
-
-button {
-    background: none;
-    border: none;
-}
-
-.inventory {
-    display: flex;
-    .inventoryContainer {
-        // display: inline;
-        // width: 100px;
-        // height: 100px;
-        img {
-            // display: inline;
-            width: 100%;
+    // Bottom Part of Screen overlay
+    .bottomBar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 3rem;
+        color: $lightPurple;
+        text-shadow: -2px -2px 0 $secondaryStar;
+        z-index: 2;
+        .hCounter {
+            margin-left: 20px;
+        }
+        .inventory {
+            display: flex;
+            .hInventory {
+                margin-right: 20px;
+            }
         }
     }
 }
@@ -186,7 +197,7 @@ button {
         box-shadow: 5px 5px $primaryStar;
         position: absolute;
         bottom: 5%;
-        right: 40%;
+        left: 40%;
     }
     .lvlTwoStarOne,
     .lvlTwoStarTwo,
@@ -199,7 +210,7 @@ button {
         right: 5%;
     }
     .lvlTwoStarTwo {
-        top: 30%;
+        top: 20%;
         right: 70%;
     }
     .lvlTwoStarThree {
@@ -249,7 +260,8 @@ button {
         box-shadow: 5px 5px $primaryStar;
         position: absolute;
         bottom: 5%;
-        right: 40%;
+        right: 50%;
+        margin-left: 10px;
     }
     .lvlThreeStarOne,
     .lvlThreeStarTwo,
@@ -275,6 +287,7 @@ button {
     }
 }
 
+//end of level 3
 //Loot Screen
 .lootScreen {
     background-image: url(../Assets/backgrounds/warpPad.jpg);
@@ -290,6 +303,7 @@ button {
         align-items: flex-end;
         bottom: 7%;
         right: 2%;
+        margin-left: 10px;
         .stevenLootTxtContainer {
             background-color: $levelTwoTxt;
             max-width: 500px;
@@ -328,10 +342,12 @@ button {
         box-shadow: 5px 5px $primaryStar;
         position: absolute;
         bottom: 5%;
-        right: 40%;
+        left: 40%;
+        margin-left: 5%;
     }
 }
 
+//end of loot screen
 //credits page
 .credits {
     background-image: url(../Assets/backgrounds/finalCredits.png);
@@ -363,6 +379,7 @@ button {
         position: absolute;
         top: 50%;
         right: 10%;
+        margin-left: 5%;
         .stevenCreditsTxtContainer {
             background-color: $levelTwoTxt;
             max-width: 500px;
@@ -376,6 +393,7 @@ button {
     }
 }
 
+//end of Credits
 //Media Queries
 @media (max-width: 750px) {
     .levelOne {
@@ -398,8 +416,46 @@ button {
     }
 }
 
-// TO DO
-// Media Queries
-// change how the bottom bar stacks
-// Update text so that it tells you to click button for next level
-// clean up code and split into level partials
+@media (max-width: 550px) {
+    .levelOne {
+        .levelOneButton {
+            margin-bottom: 85px;
+        }
+    }
+    .bottomBar {
+        flex-direction: column;
+        .inventory {
+            margin-left: 20px;
+        }
+    }
+    .levelTwo {
+        .levelTwoSteven {
+            bottom: 20%;
+        }
+        .levelTwoButton {
+            right: 5%;
+            bottom: 10%;
+        }
+    }
+    .levelThree {
+        .levelThreeSteven {
+            margin-left: 5%;
+        }
+        .levelThreeButton {
+            bottom: 15%;
+        }
+    }
+    .lootScreen {
+        .lootSection {
+            left: 5%;
+            bottom: 27%;
+            .lootImgContainer {
+                width: 200px;
+            }
+        }
+        .lootScreenButton {
+            right: 5%;
+            bottom: 15%;
+        }
+    }
+}

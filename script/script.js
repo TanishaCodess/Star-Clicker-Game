@@ -4,16 +4,16 @@ const starApp = {};
 // prompt to ask for name when they visit the page
 // store than name in a variable
 //user that name in the text
-let userName = prompt("Hi! Whats your name?");
+// let userName = prompt("Hi! Whats your name?");
 
-const checkName = function() {
-    if (userName === "") {
-        let userName = "friend";
-    } else {
-        $('.userName').text(userName);
-    }
-}
-checkName();
+// const checkName = function() {
+//     if (userName === "") {
+//         let userName = "friend";
+//     } else {
+//         $('.userName').text(userName);
+//     }
+// }
+// checkName();
 
 
 

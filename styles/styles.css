@@ -284,6 +284,38 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-family: "Fredoka One", cursive;
+  color: #FB5B68;
+  text-shadow: -2px -2px 0 #FFDD50;
+  font-size: 4rem;
+  margin-left: 150px;
+  margin-top: -40px;
+}
+
+h2 {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: "Fredoka One", cursive;
+  color: #1f0c07;
+  font-size: 2rem;
+  margin: 0;
+}
+
+i {
+  color: #FFFBA2;
+  text-shadow: 5px 5px #FFDD50;
+  font-size: 6rem;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
 .levelOne {
   background-image: url(../Assets/backgrounds/beachSide.jpg);
   background-size: cover;
@@ -336,6 +368,10 @@ img {
   width: 40%;
 }
 
+.levelOne .levelOneSteven {
+  margin: 0 10px;
+}
+
 .levelOne .levelOneSteven .stevenOneImgContainer {
   max-width: 300px;
 }
@@ -357,7 +393,7 @@ img {
   font-size: 4rem;
   -webkit-box-shadow: 5px 5px #FFFBA2;
           box-shadow: 5px 5px #FFFBA2;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .levelOne .lvlOneStarOne,
@@ -373,7 +409,7 @@ img {
 }
 
 .levelOne .lvlOneStarTwo {
-  top: 20%;
+  top: 16%;
   right: 10%;
 }
 
@@ -387,7 +423,7 @@ img {
   right: 5%;
 }
 
-.bottomBar {
+.levelOne .bottomBar {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -403,53 +439,18 @@ img {
   z-index: 2;
 }
 
-.bottomBar .hCounter {
+.levelOne .bottomBar .hCounter {
   margin-left: 20px;
 }
 
-.bottomBar .hInventory {
-  margin-right: 20px;
-}
-
-h1 {
-  font-family: "Fredoka One", cursive;
-  color: #FB5B68;
-  text-shadow: -2px -2px 0 #FFDD50;
-  font-size: 4rem;
-  margin-left: 150px;
-  margin-top: -40px;
-}
-
-h2 {
-  font-family: "Luckiest Guy", cursive;
-}
-
-p {
-  font-family: "Fredoka One", cursive;
-  color: #1f0c07;
-  font-size: 2rem;
-  margin: 0;
-}
-
-i {
-  color: #FFFBA2;
-  text-shadow: 5px 5px #FFDD50;
-  font-size: 6rem;
-}
-
-button {
-  background: none;
-  border: none;
-}
-
-.inventory {
+.levelOne .bottomBar .inventory {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.inventory .inventoryContainer img {
-  width: 100%;
+.levelOne .bottomBar .inventory .hInventory {
+  margin-right: 20px;
 }
 
 .levelTwo {
@@ -491,7 +492,7 @@ button {
           box-shadow: 5px 5px #FFFBA2;
   position: absolute;
   bottom: 5%;
-  right: 40%;
+  left: 40%;
 }
 
 .levelTwo .lvlTwoStarOne,
@@ -507,7 +508,7 @@ button {
 }
 
 .levelTwo .lvlTwoStarTwo {
-  top: 30%;
+  top: 20%;
   right: 70%;
 }
 
@@ -569,7 +570,8 @@ button {
           box-shadow: 5px 5px #FFFBA2;
   position: absolute;
   bottom: 5%;
-  right: 40%;
+  right: 50%;
+  margin-left: 10px;
 }
 
 .levelThree .lvlThreeStarOne,
@@ -622,6 +624,7 @@ button {
           align-items: flex-end;
   bottom: 7%;
   right: 2%;
+  margin-left: 10px;
 }
 
 .lootScreen .lootSteven .stevenLootTxtContainer {
@@ -668,7 +671,8 @@ button {
           box-shadow: 5px 5px #FFFBA2;
   position: absolute;
   bottom: 5%;
-  right: 40%;
+  left: 40%;
+  margin-left: 5%;
 }
 
 .credits {
@@ -705,6 +709,7 @@ button {
   position: absolute;
   top: 50%;
   right: 10%;
+  margin-left: 5%;
 }
 
 .credits .creditsSteven .stevenCreditsTxtContainer {
@@ -729,5 +734,44 @@ button {
   }
   .levelOne .bottomBar h2 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .levelOne .levelOneButton {
+    margin-bottom: 85px;
+  }
+  .bottomBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottomBar .inventory {
+    margin-left: 20px;
+  }
+  .levelTwo .levelTwoSteven {
+    bottom: 20%;
+  }
+  .levelTwo .levelTwoButton {
+    right: 5%;
+    bottom: 10%;
+  }
+  .levelThree .levelThreeSteven {
+    margin-left: 5%;
+  }
+  .levelThree .levelThreeButton {
+    bottom: 15%;
+  }
+  .lootScreen .lootSection {
+    left: 5%;
+    bottom: 27%;
+  }
+  .lootScreen .lootSection .lootImgContainer {
+    width: 200px;
+  }
+  .lootScreen .lootScreenButton {
+    right: 5%;
+    bottom: 15%;
   }
 }
