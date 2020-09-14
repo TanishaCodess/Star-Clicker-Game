@@ -48,19 +48,19 @@ const lootBox = [];
 //add item to inventory on click and store a version I can use in the final lootbox
 $(".cookieCatButton").one('click', function() {
     $(this).fadeOut();
-    $(".inventoryContainerOne").append(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat" width="50" height="50">`);
+    $(".inventoryContainerOne").append(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat">`);
     lootBox.push(`<img src="Assets/icons/cookieCat.png" alt="Cookie Cat, an icecream sandwich that looks like a cat"></img> <p>Remember, the key to Steven's Powers wasnt an icecream cake. It was the friends he made along the way.</p>`);
 })
 
 $(".pearlPointButton").one('click', function() {
     $(this).fadeOut();
-    $(".inventoryContainerTwo").append(`<img src="Assets/icons/pearlPoint.png" alt="Pearl point sticker" width="50" height="50">`);
+    $(".inventoryContainerTwo").append(`<img src="Assets/icons/pearlPoint.png" alt="Pearl point sticker">`);
     lootBox.push(`<img src="Assets/icons/pearlPoint.png" alt="Pearl point sticker"> <p>Pearl thinks you did such a great job so she gave you a Pearl Point!</p>`);
 })
 
 $(".sheildButton").one('click', function() {
     $(this).fadeOut();
-    $(".inventoryContainerThree").append(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield" width="50" height="50">`);
+    $(".inventoryContainerThree").append(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield">`);
     lootBox.push(`<img src="Assets/icons/stevenShield.png" alt="Steven's shield"> <p>Steven's powers manifested into a shield so that he could protect the ones he cares about most. We should all be more like Steven.</p>`);
 })
 

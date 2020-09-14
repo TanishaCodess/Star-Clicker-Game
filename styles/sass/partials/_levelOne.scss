@@ -41,6 +41,9 @@
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 20px;
+            p {
+                font-size: 1.7rem;
+            }
         }
     }
     .levelOneButton {
@@ -51,7 +54,6 @@
         color: $deepBrown;
         font-size: 4rem;
         box-shadow: 5px 5px $primaryStar;
-        margin-bottom: 50px;
     }
     .lvlOneStarOne,
     .lvlOneStarTwo,
@@ -74,6 +76,7 @@
     .lvlOneInventory {
         top: 65%;
         right: 5%;
+        max-width: 100px;
     }
     // Bottom Part of Screen overlay
     .bottomBar {
@@ -91,8 +94,15 @@
         }
         .inventory {
             display: flex;
+            margin-left: 10px;
             .hInventory {
                 margin-right: 20px;
+            }
+            .inventoryContainerOne,
+            .inventoryContainerTwo,
+            .inventoryContainerThree {
+                width: 50px;
+                height: 50px;
             }
         }
     }

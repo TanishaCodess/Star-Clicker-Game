@@ -1,6 +1,6 @@
 //Level Two Start
 .levelTwo {
-    background-image: url(../Assets/backgrounds/forestlevel.png);
+    background-image: url(../Assets/backgrounds/levelTwo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,6 +55,7 @@
     .lvlTwoInventory {
         top: 5%;
         left: 5%;
+        max-width: 100px;
     }
 }
 

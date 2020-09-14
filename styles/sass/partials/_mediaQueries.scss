@@ -18,6 +18,19 @@
             }
         }
     }
+    .lootScreen {
+        .lootSection {
+            left: 5%;
+            bottom: 27%;
+            .lootImgContainer {
+                width: 200px;
+            }
+        }
+        .lootScreenButton {
+            right: 5%;
+            bottom: 15%;
+        }
+    }
 }
 
 @media (max-width: 550px) {
@@ -46,19 +59,6 @@
             margin-left: 5%;
         }
         .levelThreeButton {
-            bottom: 15%;
-        }
-    }
-    .lootScreen {
-        .lootSection {
-            left: 5%;
-            bottom: 27%;
-            .lootImgContainer {
-                width: 200px;
-            }
-        }
-        .lootScreenButton {
-            right: 5%;
             bottom: 15%;
         }
     }
