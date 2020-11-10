@@ -1,16 +1,16 @@
 // prompt to ask for name when they visit the page
 // store than name in a variable
 //use that name in the text
-let userName = prompt("Hi! Whats your name?");
+// let userName = prompt("Hi! Whats your name?");
 
-const checkName = function() {
-    if (userName === "") {
-        let userName = "friend";
-    } else {
-        $('.userName').text(userName);
-    }
-}
-checkName();
+// const checkName = function() {
+//     if (userName === "") {
+//         let userName = "friend";
+//     } else {
+//         $('.userName').text(userName);
+//     }
+// }
+// checkName();
 
 
 // create a counter for the stars
@@ -82,6 +82,21 @@ let lvlCounter = 1;
 
 //Buttons Section
 //on click, unhide next level and scroll to it
+$(".startButton").on('click', function() {
+    $(".levelOne").show();
+    $(".menuScreen").hide();
+
+    // $("body,html").animate({
+    //     scrollTop: $("#levelOne").offset().top
+    // }, 800);
+
+    // $(".p").hide();
+    $(".lvlTitleContainer").show();
+    $(".bottomBar").show();
+    $(".starSectionOne").show();
+
+
+})
 $(".levelOneButton").on('click', function() {
 
     $(".levelTwo").show();
@@ -100,6 +115,7 @@ $(".levelTwoButton").on('click', function() {
     $("body,html").animate({
         scrollTop: $("#levelThree").offset().top
     }, 800);
+
 })
 
 $(".levelThreeButton").on('click', function() {
@@ -122,10 +138,14 @@ $(".lootScreenButton").on('click', function() {
 
 // Document Ready
 $(document).ready(function() {
+    $(".lvlTitleContainer").hide();
+    $(".bottomBar").hide();
+    $(".starSectionOne").hide();
     $(".levelOneButton").hide();
     $(".levelTwoButton").hide();
     $(".levelThreeButton").hide();
     $(".lootScreenButton").hide();
+    $('.levelOne').hide();
     $(".levelTwo").hide();
     $(".levelThree").hide();
     $(".lootScreen").hide();
