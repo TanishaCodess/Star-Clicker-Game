@@ -71,11 +71,6 @@ $(".startButton").on('click', function() {
     $(".levelOne").show();
     $(".menuScreen").hide();
 
-    // $("body,html").animate({
-    //     scrollTop: $("#levelOne").offset().top
-    // }, 800);
-
-    // $(".p").hide();
     $(".lvlTitleContainer").show();
     $(".bottomBar").show();
     $(".starSectionOne").show();

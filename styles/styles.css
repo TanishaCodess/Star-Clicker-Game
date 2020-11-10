@@ -408,7 +408,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 500;
 }
 
 .levelOne .lvlTitleContainer h2 {
@@ -507,7 +507,7 @@ html {
   font-size: 3rem;
   color: #978AC4;
   text-shadow: -2px -2px 0 #FFDD50;
-  z-index: 2;
+  z-index: 500;
 }
 
 .levelOne .bottomBar .hCounter {
@@ -538,17 +538,20 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
-  z-index: 0;
 }
 
-.levelTwo .levelTwoSteven {
+.levelTwo .lvlTwoContainer {
+  position: relative;
+  height: 100%;
+}
+
+.levelTwo .lvlTwoContainer .levelTwoSteven {
   position: absolute;
   bottom: 5%;
   left: 2%;
 }
 
-.levelTwo .levelTwoSteven .stevenTwoTxtContainer {
+.levelTwo .lvlTwoContainer .levelTwoSteven .stevenTwoTxtContainer {
   background-color: #DD504B;
   max-width: 500px;
   border-radius: 15px;
@@ -556,11 +559,11 @@ html {
   margin-bottom: 20px;
 }
 
-.levelTwo .levelTwoSteven .stevenTwoImgContainer {
+.levelTwo .lvlTwoContainer .levelTwoSteven .stevenTwoImgContainer {
   max-width: 200px;
 }
 
-.levelTwo .levelTwoButton {
+.levelTwo .lvlTwoContainer .levelTwoButton {
   background-color: #FB5B68;
   border-radius: 15px;
   padding: 20px;
@@ -574,29 +577,29 @@ html {
   left: 40%;
 }
 
-.levelTwo .lvlTwoStarOne,
-.levelTwo .lvlTwoStarTwo,
-.levelTwo .lvlTwoStarThree,
-.levelTwo .lvlTwoInventory {
+.levelTwo .lvlTwoContainer .lvlTwoStarOne,
+.levelTwo .lvlTwoContainer .lvlTwoStarTwo,
+.levelTwo .lvlTwoContainer .lvlTwoStarThree,
+.levelTwo .lvlTwoContainer .lvlTwoInventory {
   position: absolute;
 }
 
-.levelTwo .lvlTwoStarOne {
+.levelTwo .lvlTwoContainer .lvlTwoStarOne {
   top: 5%;
   right: 5%;
 }
 
-.levelTwo .lvlTwoStarTwo {
+.levelTwo .lvlTwoContainer .lvlTwoStarTwo {
   top: 20%;
   right: 70%;
 }
 
-.levelTwo .lvlTwoStarThree {
+.levelTwo .lvlTwoContainer .lvlTwoStarThree {
   bottom: 20%;
   right: 50%;
 }
 
-.levelTwo .lvlTwoInventory {
+.levelTwo .lvlTwoContainer .lvlTwoInventory {
   top: 5%;
   left: 5%;
   max-width: 100px;
@@ -608,10 +611,14 @@ html {
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
 }
 
-.levelThree .levelThreeSteven {
+.levelThree .lvlThreeContainer {
+  position: relative;
+  height: 100%;
+}
+
+.levelThree .lvlThreeContainer .levelThreeSteven {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,7 +634,7 @@ html {
   right: 2%;
 }
 
-.levelThree .levelThreeSteven .stevenThreeTxtContainer {
+.levelThree .lvlThreeContainer .levelThreeSteven .stevenThreeTxtContainer {
   background-color: #DD504B;
   max-width: 500px;
   border-radius: 15px;
@@ -635,11 +642,11 @@ html {
   margin-bottom: 20px;
 }
 
-.levelThree .levelThreeSteven .stevenThreeImgContainer {
+.levelThree .lvlThreeContainer .levelThreeSteven .stevenThreeImgContainer {
   max-width: 200px;
 }
 
-.levelThree .levelThreeButton {
+.levelThree .lvlThreeContainer .levelThreeButton {
   background-color: #FB5B68;
   border-radius: 15px;
   padding: 20px;
@@ -654,29 +661,29 @@ html {
   margin-left: 10px;
 }
 
-.levelThree .lvlThreeStarOne,
-.levelThree .lvlThreeStarTwo,
-.levelThree .lvlThreeStarThree,
-.levelThree .lvlThreeInventory {
+.levelThree .lvlThreeContainer .lvlThreeStarOne,
+.levelThree .lvlThreeContainer .lvlThreeStarTwo,
+.levelThree .lvlThreeContainer .lvlThreeStarThree,
+.levelThree .lvlThreeContainer .lvlThreeInventory {
   position: absolute;
 }
 
-.levelThree .lvlThreeStarOne {
+.levelThree .lvlThreeContainer .lvlThreeStarOne {
   top: 50%;
   right: 65%;
 }
 
-.levelThree .lvlThreeStarTwo {
+.levelThree .lvlThreeContainer .lvlThreeStarTwo {
   top: 10%;
   left: 5%;
 }
 
-.levelThree .lvlThreeStarThree {
+.levelThree .lvlThreeContainer .lvlThreeStarThree {
   top: 20%;
   right: 60%;
 }
 
-.levelThree .lvlThreeInventory {
+.levelThree .lvlThreeContainer .lvlThreeInventory {
   bottom: 40%;
   right: 30%;
   max-width: 100px;
@@ -688,10 +695,14 @@ html {
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
 }
 
-.lootScreen .lootSteven {
+.lootScreen .lootScreenContainer {
+  position: relative;
+  height: 100%;
+}
+
+.lootScreen .lootScreenContainer .lootSteven {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +719,7 @@ html {
   margin-left: 10px;
 }
 
-.lootScreen .lootSteven .stevenLootTxtContainer {
+.lootScreen .lootScreenContainer .lootSteven .stevenLootTxtContainer {
   background-color: #DD504B;
   max-width: 500px;
   border-radius: 15px;
@@ -716,32 +727,32 @@ html {
   margin-bottom: 20px;
 }
 
-.lootScreen .lootSteven .stevenLootImgContainer {
+.lootScreen .lootScreenContainer .lootSteven .stevenLootImgContainer {
   max-width: 300px;
 }
 
-.lootScreen .lootSection {
+.lootScreen .lootScreenContainer .lootSection {
   position: absolute;
   bottom: 20%;
   left: 40%;
 }
 
-.lootScreen .lootSection .lootDisplay {
+.lootScreen .lootScreenContainer .lootSection .lootDisplay {
   max-width: 300px;
 }
 
-.lootScreen .lootSection .lootDisplay p {
+.lootScreen .lootScreenContainer .lootSection .lootDisplay p {
   background-color: #FFDD50;
   border-radius: 15px;
   padding: 20px;
   margin-top: 20px;
 }
 
-.lootScreen .lootSection .lootImgContainer {
+.lootScreen .lootScreenContainer .lootSection .lootImgContainer {
   max-width: 300px;
 }
 
-.lootScreen .lootScreenButton {
+.lootScreen .lootScreenContainer .lootScreenButton {
   background-color: #FB5B68;
   border-radius: 15px;
   padding: 20px;

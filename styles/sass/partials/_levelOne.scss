@@ -14,7 +14,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 2;
+        z-index: 500;
         h2 {
             font-size: 4rem;
             color: $lightPurple;
@@ -88,7 +88,7 @@
         font-size: 3rem;
         color: $lightPurple;
         text-shadow: -2px -2px 0 $secondaryStar;
-        z-index: 2;
+        z-index: 500;
         .hCounter {
             margin-left: 20px;
         }
