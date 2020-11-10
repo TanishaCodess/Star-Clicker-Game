@@ -1,18 +1,3 @@
-// prompt to ask for name when they visit the page
-// store than name in a variable
-//use that name in the text
-// let userName = prompt("Hi! Whats your name?");
-
-// const checkName = function() {
-//     if (userName === "") {
-//         let userName = "friend";
-//     } else {
-//         $('.userName').text(userName);
-//     }
-// }
-// checkName();
-
-
 // create a counter for the stars
 let counter = 0;
 
